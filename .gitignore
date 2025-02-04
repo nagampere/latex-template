@@ -28,7 +28,7 @@ _minted*
 *.vrb
 
 latexindent.yaml
-main.pdf
+
 digest.pdf
 
 !/figure/figure_sample.png
