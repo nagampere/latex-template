@@ -1,5 +1,6 @@
 /figure/**
 /logs/**
+/output/**
 *.aux
 *.bbl
 *.blg
@@ -20,13 +21,18 @@
 *.fls
 *.log
 *.fdb_latexmk
-*.synctex
 *.synctex.gz
 _minted*
 *.nav
 *.snm
 *.vrb
 
-!/figure/figure_sample.png
-!/logs/.gitkeep
+latexindent.yaml
+main.pdf
+digest.pdf
 
+!/figure/figure_sample.png
+!/figure/**.tex
+!/figure/data/.gitkeep
+!/logs/.gitkeep
+!/output/.gitkeep
