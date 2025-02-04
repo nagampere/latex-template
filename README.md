@@ -187,12 +187,13 @@ natbibとは、文献管理を目的としたlatexライブラリの一つで、
 
 - ```\renewcommand{\bibname}{参考文献}```
   - 文献目録のタイトルを「参考文献」にする
-- ```\setcitestyle{super,open={},close={)}}```
+- ```\setcitestyle{super,sort&compress,open={},close={)}}```
   - "super"で、右肩上がり数字(山田 (2020) <sup>3\)</sup> )にする。
   - "open={},close={)}"で、「3\)」のスタイルにする。
-- ```\bibliographystyle{unsrtnat}```
-  - unsrt スタイルに設定する。
-  - 文献がアルファベット順ではなく，引用された順に並ぶ。
+- ```\setcitestyle{authoryear}```
+- ```\bibliographystyle{backmatter/kucivil.bst} ```
+  - 設定の基準は[経済学におけるBibTeXの利用](https://qiita.com/shiro_takeda/items/92adf0b20c501548355e)
+  - 神戸大学市民工学の書式に変更
 
 参考
 
@@ -254,7 +255,8 @@ natbibとは、文献管理を目的としたlatexライブラリの一つで、
 
 ```{}
 latex-template
-├── main.tex                   # メインファイル（全体をまとめる）
+├── main.tex                   # 本文のメインファイル（全体をまとめる）
+├── digest.tex                 # 要旨のメインファイル
 ├── preamble
 │   ├── packages.tex           # 使用するパッケージ
 │   ├── settings.tex           # ドキュメント設定（章構成、引用スタイルなど）
@@ -272,6 +274,7 @@ latex-template
 │   └── chapter5.tex
 ├── backmatter
 │   ├── citations.tex          # 参考文献リスト
+│   ├── kucivil.bst            # 引用スタイルの設定ファイル
 │   ├── references.bib         # bibtexファイル
 │   ├── appendix.tex           # 付録
 │   └── acknowledgements.tex   # 謝辞
@@ -280,10 +283,13 @@ latex-template
 ├── table                      # 表専用のディレクトリ
 │   ├── table_sample1.tex
 │   └── table_sample2.tex
+├── digest                     # 要旨の設定ファイル
+│   └── settings.tex
 ├── output
 ├── log                        # ログファイルや中間生成物
 ├── template                   # テンプレート関連
-├── main.pdf            　      # 最終出力物
+├── main.pdf            　      # 本文の最終出力物(ignore)
+├── digest.pdf                 # 要旨の最終出力物(ignore)
 ├── settings.json              # settings
 └── README.md
 ```
