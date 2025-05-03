@@ -23,12 +23,14 @@ VS CodeはLaTeX環境としておすすめ。「LaTeX Workshop」によるリア
 homebrewでいずれもインストールできます。ターミナルから以下のコードを実行してください。
 
 ```bash
-# vscodeのインストール
-brew install visual-studio-code --cask
-# latexのインストール
-brew install --cask mactex-no-gui
-sudo tlmgr update --self --all
-sudo tlmgr paper a4
+# VSCode の導入
+brew install visual-studio-code --cask 
+# LaTeX環境(GUI無)の導入
+brew install --cask mactex-no-gui 
+# 管理者権限でLaTeXパッケージの更新
+sudo tlmgr update --self --all 
+# 管理者権限で用紙サイズの変更
+sudo tlmgr paper a4 
 ```
 
 MacOSでhomebrewを使っていない人はいますぐ使えるようになってください。  
