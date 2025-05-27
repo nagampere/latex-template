@@ -14,6 +14,7 @@ VS CodeはLaTeX環境としておすすめ。「LaTeX Workshop」によるリア
 
 - [【自研究室向け】LaTeX+VSCode環境構築 2023年版](https://qiita.com/fuku_uma/items/e5ad46125a9612320273)
 - [LaTeX Workshop を使いこなす](https://qiita.com/Yarakashi_Kikohshi/items/a9357dd469320ffb65a0)
+- [VSCode で最高の LaTeX 環境を作る](https://qiita.com/rainbartown/items/d7718f12d71e688f3573)
 
 ---
 
@@ -179,6 +180,7 @@ BiBTeXとは、Latexの参考文献用のデータベースで、通常.bibフ�
 
 - [BiBTeXとは](https://qiita.com/SUZUKI_Masaya/items/14f9727845e020f8e7e9)
 - [VSCode + Zotero + BibTeXによる論文執筆ワークフロー](https://zenn.dev/nicetak/articles/zotero-tex-bibtex)
+- [Zoteroから参考文献リストを自動エクスポートする (PandocとZoteroで参考文献：前編)](https://zenn.dev/sky_y/articles/pandoc-advent-2020-bib1)
 
 ### 3.2 natbibライブラリの使い方
 
