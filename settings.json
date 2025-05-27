@@ -8,12 +8,10 @@
     "latex-workshop.latex.recipes": [
         {
         //論文用レシピ
-        "name": "platex",
+        "name": "platex+pbibtex+dvipdfmx",
         "tools": [
             "platex",
             "pbibtex",
-            "platex",
-            // "mendex",
             "platex",
             "dvipdfmx",
             // "move",
@@ -22,12 +20,8 @@
         },
         {
         //要旨用レシピ
-        "name": "preliminary",
+        "name": "platex+dvipdfmx",
         "tools": [
-            "platex",
-            //            "pbibtex",
-            "platex",
-            //            "mendex",
             "platex",
             "dvipdfmx",
             // "move",
